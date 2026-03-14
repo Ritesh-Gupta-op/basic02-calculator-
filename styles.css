@@ -1,0 +1,79 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-style: gotham,sans-serif;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    font-size:50px;
+    padding: 10px; 
+    position: top; 
+   
+}
+h1:hover{
+    cursor: pointer;
+    color: rgb(247, 4, 186);
+    transition: all 0.5s ease;
+    text-shadow: 3px 3px rgb(185, 7, 7); 
+
+}   
+body{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: grid-auto-flow;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient( to right, #7300ff, #ff00aa);
+}
+button {
+    font-family: gotham,sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 0.7rem;  
+    height: 70px; 
+    width: 90px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Slight shadow for depth */
+    cursor: pointer;
+    transition: all 0.1s ease;
+    background : linear-gradient( to right, #e7f306, #0efbff);
+    margin: 0;
+   opacity:0.9;
+   font-size: 20px;
+}
+button:hover {
+    background:white;
+    transform: scale(1.05); 
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3); 
+}   
+.span-one {
+    grid-column: span 2;
+    width:180px ;
+}
+.span-two {
+    grid-row: span 2;
+}
+.output {
+  height: 60px;
+  grid-column: 1 / -2;
+  background-color: rgba(11, 2, 82, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0px;
+  word-wrap: break-word;
+  word-break: break-all;
+   border-radius: 0.7rem;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
