@@ -5,7 +5,7 @@ A simple calculator application that performs basic arithmetic operations such a
 <img width="1920" height="1080" alt="Screenshot (606)" src="https://github.com/user-attachments/assets/78138599-95e4-435f-b49c-3c4dbd58a542" />
 
 
-## 📌 Features
+# 📌 Features
 - Addition
 - Subtraction
 - Multiplication
